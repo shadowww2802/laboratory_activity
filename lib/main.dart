@@ -21,7 +21,7 @@ class FirstPage extends StatelessWidget {
   TextEditingController userName = TextEditingController();
   TextEditingController passWord = TextEditingController();
 
-  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   FirstPage({super.key});
 
@@ -163,7 +163,7 @@ class FirstPage extends StatelessWidget {
                         );
                       } else {
                         print('Please enter a username first before clicking the button...');
-                      };
+                      }
                     },
                     child: const Text(
                       'Go to the second page',
@@ -179,7 +179,7 @@ class FirstPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 30),
-                  Center(
+                  const Center(
                     child: Text('(Please input username first then click the second page button...)'),
                   ),
                 ],
@@ -217,7 +217,7 @@ class SecondPage extends StatelessWidget {
                    Center(
                     child: Text(
                       'Welcome $userName! This is the second page...',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 20,
                         fontStyle: FontStyle.italic,
                       ),
