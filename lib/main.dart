@@ -166,7 +166,7 @@ class FirstPage extends StatelessWidget {
                       }
                     },
                     child: const Text(
-                      'Go to the second page',
+                      'Next Page',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 15,
@@ -239,7 +239,7 @@ class SecondPage extends StatelessWidget {
                       Navigator.pop(context);
                     },
                     child: const Text(
-                      'Go back to the first page',
+                      'Previous Page',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 15,
